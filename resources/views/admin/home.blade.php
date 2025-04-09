@@ -1,1 +1,1 @@
-<h1>Ahmed is admin</h1>
+@extends('admin.layouts.main')
