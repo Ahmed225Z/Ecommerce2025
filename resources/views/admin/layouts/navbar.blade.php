@@ -176,9 +176,13 @@
                   <i class="mdi mdi-logout text-danger"></i>
                 </div>
               </div>
-              <div class="preview-item-content">
-                <p class="preview-subject mb-1">Log out</p>
-              </div>
+              <form method="POST" action="{{ route('logout') }}" x-data>
+                @csrf
+                <div class="preview-item-content">
+                    <button class="preview-subject mb-1"> <p class="preview-subject mb-1">Log out </p></button>
+                </div>
+            </form>
+            
             </a>
             <div class="dropdown-divider"></div>
             <p class="p-3 mb-0 text-center">Advanced settings</p>
