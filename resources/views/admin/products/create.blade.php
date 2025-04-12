@@ -3,6 +3,7 @@
 @extends('admin.layouts.main')
 
 @section('body')
+@include('admin.layouts.error')
 <form method="POST" action="{{route('store')}}" enctype="multipart/form-data">
     @csrf
     <div class="form-group">

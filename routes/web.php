@@ -22,6 +22,6 @@ Route::middleware('isAdmin')->group(function(){
     Route::controller(ProductController::class)->group(function(){
         Route::get('createproduct','create')->name('products.create');
         Route::post('productstore','store')->name('store');
-        Route::get('admin/products','index')->name('products.index');
+        Route::get('products','index')->name('products');
     });
 });

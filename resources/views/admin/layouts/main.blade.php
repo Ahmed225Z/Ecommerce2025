@@ -13,7 +13,11 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+            @include('flash::message')
+
           @yield('body')
+        
+        
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
@@ -27,6 +31,11 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
   @include('admin.layouts.scripts')
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+</script>
+
     <!-- End custom js for this page -->
   </body>
 </html>
