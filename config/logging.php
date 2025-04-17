@@ -72,6 +72,13 @@ return [
             'days' => env('LOG_DAILY_DAYS', 14),
             'replace_placeholders' => true,
         ],
+        'larabug' => [
+            'driver' => 'larabug',
+            'key' => env('LB_KEY'),       // مفتاح المستخدم (من ملف .env)
+            'project_key' => env('LB_PROJECT_KEY'), // مفتاح المشروع (من ملف .env)
+        ],
+    
+   
 
         'slack' => [
             'driver' => 'slack',
@@ -79,6 +86,9 @@ return [
             'username' => env('LOG_SLACK_USERNAME', 'Laravel Log'),
             'emoji' => env('LOG_SLACK_EMOJI', ':boom:'),
             'level' => env('LOG_LEVEL', 'critical'),
+          
+        'channels' => ['single', 'larabug'], // يمكن إضافة 'daily' أو غيرها حسب الحاجة
+        'ignore_exceptions' => false,
             'replace_placeholders' => true,
         ],
 
