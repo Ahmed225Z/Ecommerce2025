@@ -38,7 +38,7 @@ return [
     'environments' => [
         'production',
         'staging',
-        'local', // يمكنك إلغاء التعليق إذا كنت تريد تفعيل LaraBug في البيئة المحلية
+        // 'local', // يمكنك إلغاء التعليق إذا كنت تريد تفعيل LaraBug في البيئة المحلية
     ],
 
     /*
@@ -84,8 +84,8 @@ return [
     */
 
     'except' => [
-        'Symfony\Component\HttpKernel\Exception\NotFoundHttpException',
-        'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException',
+        // 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException',
+        // 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException',
     ],
 
     /*
